@@ -83,9 +83,10 @@ public class Area {
 	 * For example, if you place each player area one by one, the first few will have enough room to build,
 	 * but if after 11 areas, area 12 still needs to be placed, it might have run out of space because the others were to greedy.
 	 * To avoid this, build all player area's at the same time, so that the script can try to find a fair balance between all areas.
+	 * Returns true if the area built correctly, false otherwise.
 	 * @see #rmBuildAllAreas()
 	 */
-	public native void rmBuildArea(int areaID);
+	public native bool rmBuildArea(int areaID);
 	
 	/**Creates an area and returns the areaID.*/
 	public native int rmCreateArea(string name, int parentAreaID);
