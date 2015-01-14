@@ -9,7 +9,7 @@ import aom.scripting.datatypes.string;
  * These special commands are designed to place critical resources, 
  * such as Settlements and sometimes Gold Mines. 
  * They are expensive and slow, so should not be used for many objects, 
- * but can insure that objects that "must place" are present on a map.
+ * but can ensure that objects that "must place" are present on a map.
  * </p>
  * 
  * @author Mythic_Freak - mythic.freak[a]gmail.com
