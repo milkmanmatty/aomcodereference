@@ -15,7 +15,16 @@ import aom.scripting.datatypes.string;
  * @author Mythic_Freak - mythic.freak[a]gmail.com
  */
 public class FairLoc {
-	/**Adds some fairLoc placement info.*/ 
+	/**Adds some fairLoc placement info. 
+	** For each fairLoc you specify the following settings: 
+	** optional object name to use (for check placement), 
+	** forward or back (forward means towards the enemy), 
+	** inside or outside (inside means towards an ally), 
+	** min/max distance from the player, 
+	** min distance from other locations, 
+	** and min distance from the edge of the map. 
+	** You can also add regular constraints to it. 
+	** Specifying playerArea or teamArea forces the location to that area, providing these areas are defined. Useful for keeping a Settlement on a player’s island rather than across a river. */ 
 	public native int rmAddFairLoc(string unitName, bool forward, bool inside, float minPlayerDist, float maxPlayerDist, float locDist, float edgeDist, bool playerArea, bool teamArea);
 
 	/**Add specified constraint to a fairLoc placement.*/ 
