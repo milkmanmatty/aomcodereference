@@ -32,10 +32,10 @@ public class ObjectDef {
 	/**Returns the number of units placed by this objectDefID.*/
 	public native int rmGetNumberUnitsPlaced(int objectDefID);
 	
-	/**Returns a unit ID that was placed by the objectDefID.*/
+	/**Returns a unit's scenarioName that was placed by the objectDefID.*/
 	public native int rmGetUnitPlaced(int objectDefID, int index);
 
-	/**Returns the unit ID of a given player that was placed by the objectDefID.*/
+	/**Returns the unit's scenarioName of a given player that was placed by the objectDefID.*/
 	public native int rmGetUnitPlacedOfPlayer(int objectDefID, int playerID);
 	
 	/**Place object definition for the player at the given area's location.*/
