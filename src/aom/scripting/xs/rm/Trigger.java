@@ -36,7 +36,7 @@ public class Trigger {
 	public native void rmAddUnitsToArmy(int playerID, int armyID, int objectDefID);
 	
 	/**Create an army for the given player ID.*/
-	public native void rmCreateArmy(int playerID, string armyName);
+	public native int rmCreateArmy(int playerID, string armyName);
 	
 	/**Sets the current trigger active.*/
 	public native void rmSetTriggerActive(bool active);
